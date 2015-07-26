@@ -34,7 +34,7 @@ Note: This requires jQuery 1.10.x to work correctly. This is not included in the
 		<td>debug</td>
 		<td>boolean</td>
 		<td>false</td>
-		<td>Shows errors within the form in the browsers javascript console.</td>
+		<td>Shows debugging information in the javascript console.</td>
 	</tr>
 	<tr>
 		<td>cleanUp</td>
