@@ -26,10 +26,9 @@
 				//
 				
 					var pluginSettings = $.extend(
-							true,
 							{
 								debug: false,
-								cleanUp: ['width','height','id','x','y','xmlns:xlink','xml:space','enable-background','version'],
+								cleanUp: ['width','height','id','x','y','xmlns:xlink','xml:space','enable-background','version']
 							}, 
 							options 
 						);
