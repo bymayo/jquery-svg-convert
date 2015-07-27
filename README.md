@@ -9,6 +9,8 @@ jQuery plugin that takes an .svg image and coverts it in to SVG code. Very usefu
 
 Note: This requires jQuery 1.10.x to work correctly. This is not included in the repo but can be downloaded from http://jquery.com or from a Google CDN - https://developers.google.com/speed/libraries/#jquery
 
+Important: SVG's can only be converted when ran on a server environment. "Cross Origin Requests" fail on local environments.
+
 ###Installing
 
 ```html
@@ -42,8 +44,14 @@ Note: This requires jQuery 1.10.x to work correctly. This is not included in the
 		<td>['width','height','id','x','y','xmlns:xlink','xml:space','enable-background','version']</td>
 		<td>When converting to SVG code the script tidies up attributes on the <svg> element. Use this to remove these attributes.</td>
 	</tr>
+	<tr>
+		<td>onComplete</td>
+		<td>function</td>
+		<td>null</td>
+		<td>Callback that is called when all SVG's have been converted</td>
+	</tr>
 </table>
 
 
 ##Roadmap
----------
+- Ability to add custom class id & data attributes to the <svg> tag

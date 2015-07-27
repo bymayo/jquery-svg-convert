@@ -28,7 +28,8 @@
 					var pluginSettings = $.extend(
 							{
 								debug: false,
-								cleanUp: ['width','height','id','x','y','xmlns:xlink','xml:space','enable-background','version']
+								cleanUp: ['width','height','id','x','y','xmlns:xlink','xml:space','enable-background','version'],
+								onComplete: function() {}
 							}, 
 							options 
 						);
@@ -37,7 +38,8 @@
 				// Variables
 				//
 				
-					var pluginObj = this.selector;
+					var pluginObj = this.selector
+						pluginObjLength = $(pluginObj).length;
 
 				//
 				// Debugging
@@ -60,6 +62,8 @@
 				//
 				// Build
 				//
+				
+					debug('Total Objects ', pluginObjLength);
 				
 					$(pluginObj).each(
 						function(index) {
@@ -112,6 +116,13 @@
 									
 									svgObj.after(svgOutput);
 									svgObj.remove();
+									
+									/*
+										onComplete Callback
+									*/
+									if (index + 1 === pluginObjLength) {
+										pluginSettings.onComplete.call(this);
+									}
 							
 								}
 							);
