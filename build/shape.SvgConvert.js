@@ -38,7 +38,7 @@
 				// Variables
 				//
 				
-					var pluginObj = this.selector
+					var pluginObj = this.selector,
 						pluginObjLength = $(pluginObj).length;
 
 				//

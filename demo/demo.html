@@ -14,26 +14,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        
+
         <style>
-	        
+
 	        img,
 	        svg {
 		        width: 300px;
 	        }
-	        
+
 	        path,
 	        polygon,
 	        circle {
 		        fill: #44BFA9;
 	        }
-	        
+
 	        svg:hover path,
 	        svg:hover polygon,
 	        svg:hover circle {
 		        fill: #8068A2;
 	        }
-	        
+
         </style>
 
     </head>
@@ -41,9 +41,9 @@
     <body>
 
 		<!-- No Convert -->
-	    <img src="iconmonstr-selection-7-icon.svg" alt="Selection Icon">	    
+	    <img src="iconmonstr-selection-7-icon.svg" alt="Selection Icon">
 
-		<!-- Convert -->	    
+		<!-- Convert -->
 	    <img src="iconmonstr-selection-7-icon.svg" alt="Selection Icon" class="svg-convert">
 	    <img src="iconmonstr-selection-7-icon.svg" alt="Selection Icon" class="svg-convert">
 	    <img src="iconmonstr-selection-7-icon.svg" alt="Selection Icon" class="svg-convert">
@@ -52,31 +52,31 @@
 		<!-- Scripts -->
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="../build/shape.SvgConvert.min.js"></script>
-        
+        <script src="../build/shape.svgConvert.min.js"></script>
+
         <script>
-	    
+
 	    	$(document)
 	    		.ready(
 		    		function(){
-			    		
+
 			    		$('.svg-convert')
 			    			.shapeSvgConvert(
 				    			{
 					    			debug: true,
 					    			onComplete: function() {
-						    			
+
 										console.log('Finished Converting YO');
-						    			
+
 					    			}
 				    			}
 			    			);
-			    		
+
 		    		}
 	    		);
-	        
+
 		</script>
-        
+
 
     </body>
 
