@@ -1,0 +1,18 @@
+{
+  "name": "shape-svg-convert",
+  "version": "1.0.0",
+  "main": [
+    "build/shape.svgConvert.js",
+    "build/shape.SvgConvert.min.js"
+  ],
+  "ignore": [
+    ".codekit-cache",
+    ".git",
+    ".DS_Store",
+    "demo",
+    "README.md"
+  ],
+  "dependencies": {
+    "jquery": ">=1.10.2"
+  }
+}
