@@ -18,7 +18,7 @@ It is useful when dealing with Content Management Systems (CMS) where users uplo
 
 The simplest way to get up and running is to copy the `svgConvert.min.js` file from `dist` and place it in to your `js` folder inside your project. 
 
-Insert the code below before your `</body>` tag
+Insert the code below before your `</body>` tag.
 
 ```html
 <script src="js/svgConvert.min.js"></script>
@@ -29,10 +29,10 @@ To initialise the plugin, use the code below in your JS files.
 ```javascript
 $('.svg-convert').svgConvert();
 ```
-The SVG Convert class (`.svg-convert`) then needs to just be added to SVG's that you want converting from images, to raw code
+The SVG Convert class `.svg-convert` needs to just be added to .svg's that you want converting from images, to raw code.
 
 ```html
-<img src="images/monkey.jpg" class="svg-convert">
+<img src="images/monkey.svg" class="svg-convert">
 ```
 
 This will then convert the image. Any attributes (E.g. class, id, data- etc) you add to the image will be carried across after it has been converted (See `Options` below for more information)
