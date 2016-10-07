@@ -53,31 +53,31 @@ This will then convert the image. Any attributes (E.g. class, id, data- etc) you
 		<td>array</td>
 		<td>['width','height','id','x','y','xmlns','xmlns:a','xmlns:xlink',
 		'xml:space','enable-background','version','style']</td>
-		<td>When converting to `<svg>` the script removes any attributes on the `<svg>` set inside this variable. Use this to remove these attributes.</td>
+		<td>When converting to <svg> the script removes any attributes on the <svg> set inside this variable. Use this to remove these attributes.</td>
 	</tr>
 	<tr>
 		<td>imgIncludeAttr</td>
 		<td>boolean</td>
 		<td>true</td>
-		<td>Any attributes (class, id, data-, width etc) you add to the `<img>` before it gets converted will be added to the `<svg>` after completion.</td>
+		<td>Any attributes (class, id, data-, width etc) you add to the <img> before it gets converted will be added to the <svg> after completion.</td>
 	</tr>
 	<tr>
 		<td>imgCleanupAttr</td>
 		<td>array</td>
 		<td>['alt','src']</td>
-		<td>If you don't want certain attributes from the `<img>` to be added on to the `<svg>` then add them in to the array</td>
+		<td>If you don't want certain attributes from the <img> to be added on to the <svg> then add them in to the array</td>
 	</tr>
 	<tr>
 		<td>removeClass</td>
 		<td>boolean</td>
 		<td>true</td>
-		<td>Removes the selector class from the `<svg>` after it's been converted. In the example above, this would remove `svg-convert` from the `class=""` attribute</td>
+		<td>Removes the selector class from the <svg> after it's been converted. In the example above, this would remove .svg-convert from the class attribute</td>
 	</tr>
 	<tr>
 		<td>addClass</td>
 		<td>string</td>
 		<td>svg-converted</td>
-		<td>After the `<img>` has been converted you can optionally add a class to the `<svg>`</td>
+		<td>After the <img> has been converted you can optionally add a class to the <svg></td>
 	</tr>
 	<tr>
 		<td>onComplete</td>
