@@ -1,9 +1,9 @@
 {
-  "name": "shape-svg-convert",
-  "version": "1.0.0",
+  "name": "svg-convert",
+  "version": "1.0.1",
   "main": [
-    "build/shape.svgConvert.js",
-    "build/shape.SvgConvert.min.js"
+    "dist/svgConvert.js",
+    "dist/svgConvert.min.js"
   ],
   "ignore": [
     ".codekit-cache",

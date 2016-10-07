@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
 
         <meta charset="utf-8">
-
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-        <title>Demo</title>
-
+        <title>SVG Convert - Demo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
         <style>
-
+	        
+	        body {
+		        font-family: Helvetica, sans-serif;
+	        }
+	        
 	        img,
 	        svg {
 		        width: 300px;
@@ -33,26 +33,24 @@
 	        svg:hover circle {
 		        fill: #8068A2;
 	        }
-
         </style>
 
     </head>
 
     <body>
 
-		<!-- No Convert -->
-	    <img src="iconmonstr-selection-7-icon.svg" alt="Selection Icon">
+		<h2>No Conversion</h2>
+	    <img src="icon.svg" alt="Selection Icon">
+	    
+		<h2>Conversion (With Image Attributes)</h2>
+	    <img src="icon.svg" alt="Selection Icon" width="100" height="100" class="svg-convert add-this-class">
 
-		<!-- Convert -->
-	    <img src="iconmonstr-selection-7-icon.svg" alt="Selection Icon" class="svg-convert">
-	    <img src="iconmonstr-selection-7-icon.svg" alt="Selection Icon" class="svg-convert">
-	    <img src="iconmonstr-selection-7-icon.svg" alt="Selection Icon" class="svg-convert">
-	    <img src="iconmonstr-selection-7-icon.svg" alt="Selection Icon" class="svg-convert">
+		<h2>Conversion (Without Image Attributes)</h2>
+	    <img src="icon.svg" alt="Selection Icon" class="svg-convert">
 
 		<!-- Scripts -->
-
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="../build/shape.svgConvert.min.js"></script>
+        <script src="../dist/shape.svgConvert.min.js"></script>
 
         <script>
 
@@ -61,13 +59,10 @@
 		    		function(){
 
 			    		$('.svg-convert')
-			    			.shapeSvgConvert(
+			    			.svgConvert(
 				    			{
-					    			debug: true,
 					    			onComplete: function() {
-
-										console.log('Finished Converting YO');
-
+										console.log("Finished Converting SVG's");
 					    			}
 				    			}
 			    			);
@@ -76,7 +71,6 @@
 	    		);
 
 		</script>
-
 
     </body>
 

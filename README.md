@@ -1,27 +1,44 @@
-#Shape SVG Convert
-http://twitter.com/madebyshape
+<img src="https://raw.githubusercontent.com/madebyshape/svg-convert/master/screenshots/icon.png" width="50">
 
-##Description
+# SVG Convert
 
-jQuery plugin that takes an .svg image and coverts it in to SVG code. Very useful when dealing with Content Management Systems (CMS) where users upload .svg files. Allowing you to interact with the raw code, changing fills, strokes etc.
+> This plugin was previously called 'Shape SVG Convert'. When updating please note the plugin name and options have changed slightly.
 
-##Usage
+SVG Convert is a jQuery plugin that takes an .svg image `<img>` and coverts it in to SVG code `<svg>`. 
 
-Note: This requires jQuery 1.10.x to work correctly. This is not included in the repo but can be downloaded from http://jquery.com or from a Google CDN - https://developers.google.com/speed/libraries/#jquery
+It is useful when dealing with Content Management Systems (CMS) where users upload `.svg` files. It allows you to then interact with the raw code, changing fills, strokes etc.
 
-Important: SVG's can only be converted when ran on a server environment. "Cross Origin Requests" fail on local environments.
+## Usage
 
-###Installing
+> **Important: SVG's can only be converted when ran on a server environment. "Cross Origin Requests" fail on local environments.**
+
+## Getting Started
+
+### Install
+
+The simplest way to get up and running is to copy the `svgConvert.min.js` file from `dist` and place it in to your `js` folder inside your project. 
+
+Insert the code below before your `</body>` tag
 
 ```html
-<script>
-	$(document).ready(function(){
-		$('.svg-convert').shapeSvgConvert();
-	});
-</script>
+<script src="js/svgConvert.min.js"></script>
 ```
 
-##Options
+To initialise the plugin, use the code below in your JS files.
+
+```javascript
+	$('.svg-convert').svgConvert();
+</script>
+```
+The SVG Convert class (`.svg-convert`) then needs to just be added to SVG's that you want converting from images, to raw code
+
+```html
+<img src="images/monkey.jpg" class="svg-convert">
+```
+
+This will then convert the image. Any attributes (E.g. class, id, data- etc) you add to the image will be carried across after it has been converted (See `Options` below for more information)
+
+## Options
 
 ### General
 
@@ -33,16 +50,34 @@ Important: SVG's can only be converted when ran on a server environment. "Cross 
 		<td><strong>Description</strong></td>
 	</tr>
 	<tr>
-		<td>debug</td>
-		<td>boolean</td>
-		<td>false</td>
-		<td>Shows debugging information in the javascript console.</td>
+		<td>svgCleanupAttr</td>
+		<td>array</td>
+		<td>['width','height','id','x','y','xmlns','xmlns:a','xmlns:xlink','xml:space','enable-background','version','style']</td>
+		<td>When converting to `<svg>` the script removes any attributes on the `<svg>` set inside this variable. Use this to remove these attributes.</td>
 	</tr>
 	<tr>
-		<td>cleanUp</td>
+		<td>imgIncludeAttr</td>
+		<td>boolean</td>
+		<td>true</td>
+		<td>Any attributes (class, id, data-, width etc) you add to the `<img>` before it gets converted will be added to the `<svg>` after completion.</td>
+	</tr>
+	<tr>
+		<td>imgCleanupAttr</td>
 		<td>array</td>
-		<td>['width','height','id','x','y','xmlns:xlink','xml:space','enable-background','version']</td>
-		<td>When converting to SVG code the script tidies up attributes on the <svg> element. Use this to remove these attributes.</td>
+		<td>['alt','src']</td>
+		<td>If you don't want certain attributes from the `<img>` to be added on to the `<svg>` then add them in to the array</td>
+	</tr>
+	<tr>
+		<td>removeClass</td>
+		<td>boolean</td>
+		<td>true</td>
+		<td>Removes the selector class from the `<svg>` after it's been converted. In the example above, this would remove `svg-convert` from the `class=""` attribute</td>
+	</tr>
+	<tr>
+		<td>addClass</td>
+		<td>string</td>
+		<td>svg-converted</td>
+		<td>After the `<img>` has been converted you can optionally add a class to the `<svg>`</td>
 	</tr>
 	<tr>
 		<td>onComplete</td>
@@ -54,4 +89,4 @@ Important: SVG's can only be converted when ran on a server environment. "Cross 
 
 
 ##Roadmap
-- Ability to add custom class id & data attributes to the <svg> tag
+- Ability to set options on images with a `data` attribute.
