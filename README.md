@@ -51,8 +51,10 @@ This will then convert the image. Any attributes (E.g. class, id, data- etc) you
 	<tr>
 		<td>svgCleanupAttr</td>
 		<td>array</td>
-		<td>['width','height','id','x','y','xmlns','xmlns:a','xmlns:xlink',
-		'xml:space','enable-background','version','style']</td>
+		<td>['width','height','id','x','y',
+		'xmlns','xmlns:a','xmlns:xlink',
+		'xml:space','enable-background',
+		'version','style']</td>
 		<td>When converting to <svg> the script removes any attributes on the <svg> set inside this variable. Use this to remove these attributes.</td>
 	</tr>
 	<tr>
