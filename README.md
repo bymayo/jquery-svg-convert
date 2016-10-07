@@ -27,8 +27,7 @@ Insert the code below before your `</body>` tag
 To initialise the plugin, use the code below in your JS files.
 
 ```javascript
-	$('.svg-convert').svgConvert();
-</script>
+$('.svg-convert').svgConvert();
 ```
 The SVG Convert class (`.svg-convert`) then needs to just be added to SVG's that you want converting from images, to raw code
 
@@ -52,7 +51,8 @@ This will then convert the image. Any attributes (E.g. class, id, data- etc) you
 	<tr>
 		<td>svgCleanupAttr</td>
 		<td>array</td>
-		<td>['width','height','id','x','y','xmlns','xmlns:a','xmlns:xlink','xml:space','enable-background','version','style']</td>
+		<td>['width','height','id','x','y','xmlns','xmlns:a','xmlns:xlink',
+		'xml:space','enable-background','version','style']</td>
 		<td>When converting to `<svg>` the script removes any attributes on the `<svg>` set inside this variable. Use this to remove these attributes.</td>
 	</tr>
 	<tr>
