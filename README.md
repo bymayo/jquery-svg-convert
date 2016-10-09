@@ -4,9 +4,9 @@
 
 > This plugin was previously called 'Shape SVG Convert'. When updating please note the plugin name and options have changed slightly.
 
-SVG Convert is a jQuery plugin that takes an .svg image `<img>` and coverts it in to SVG code `<svg>`. 
+SVG Convert is a jQuery plugin that takes an `.svg` image (`<img>`) and converts it in to raw SVG code (`<svg>`) 
 
-It is useful when dealing with Content Management Systems (CMS) where users upload `.svg` files. It allows you to then interact with the raw code, changing fills, strokes etc.
+It is useful when dealing with Content Management Systems (CMS) where users upload `.svg` files. It allows you to then interact with the raw code, changing fills, strokes etc within the sites CSS.
 
 ## Usage
 
@@ -55,7 +55,7 @@ This will then convert the image. Any attributes (E.g. class, id, data- etc) you
 		'xmlns','xmlns:a','xmlns:xlink',
 		'xml:space','enable-background',
 		'version','style']</td>
-		<td>When converting to svg the script removes any attributes on the svg set inside this variable. Use this to remove these attributes.</td>
+		<td>When converting to svg the script removes any attributes on the svg set inside this array. Use this to remove these attributes.</td>
 	</tr>
 	<tr>
 		<td>imgIncludeAttr</td>
