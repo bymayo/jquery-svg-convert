@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/madebyshape/svg-convert/master/screenshots/icon.png" width="50">
+<img src="https://raw.githubusercontent.com/bymayo/svg-convert/master/screenshots/icon.png" width="50">
 
 # SVG Convert
 
