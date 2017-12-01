@@ -1,0 +1,19 @@
+{
+  "name": "svg-convert",
+  "version": "1.0.0",
+  "description": "SVG Convert is a jQuery plugin that takes an .svg image (<img>) and converts it in to raw SVG code (<svg>)",
+  "main": "dist/svgConvert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bymayo/svg-convert.git"
+  },
+  "author": "Jason Mayo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bymayo/svg-convert/issues"
+  },
+  "homepage": "https://github.com/bymayo/svg-convert#readme"
+}
