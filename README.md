@@ -16,12 +16,12 @@ It is useful when dealing with Content Management Systems (CMS) where users uplo
 
 ### Install
 
-The simplest way to get up and running is to copy the `svgConvert.min.js` file from `dist` and place it in to your `js` folder inside your project. 
+The simplest way to get up and running is to copy the `svg-convert.js` file from `dist` and place it in to your `js` folder inside your project. 
 
 Insert the code below before your `</body>` tag.
 
 ```html
-<script src="js/svgConvert.min.js"></script>
+<script src="js/svg-convert.js"></script>
 ```
 
 To initialise the plugin, use the code below in your JS files.
