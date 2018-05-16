@@ -37,6 +37,8 @@ The SVG Convert class `.svg-convert` needs to just be added to .svg's that you w
 
 This will then convert the image. Any attributes (E.g. class, id, data- etc) you add to the image will be carried across after it has been converted (See `Options` below for more information)
 
+**Remember** to load [jQuery](https://code.jquery.com/) _before to use this plugin_.
+
 ## Options
 
 ### General
