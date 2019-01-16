@@ -1,4 +1,4 @@
-> ⚠️ Deprecated - This plugin is no longer supported. 
+> ⚠️ Deprecated - This plugin is no longer supported but it is fully functional.
 
 <img src="https://raw.githubusercontent.com/bymayo/svg-convert/master/screenshots/icon.png" width="50">
 
