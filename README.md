@@ -1,10 +1,8 @@
-> ⚠️ Deprecated - This plugin is no longer supported but it is fully functional.
+> ⚠️ Deprecated - This plugin is no longer supported, but it is fully functional.
 
 <img src="https://raw.githubusercontent.com/bymayo/svg-convert/master/screenshots/icon.png" width="50">
 
 # SVG Convert
-
-> This plugin was previously called 'Shape SVG Convert'. When updating please note the plugin name and options have changed slightly.
 
 SVG Convert is a jQuery plugin that takes an `.svg` image (`<img>`) and converts it in to raw SVG code (`<svg>`) 
 
@@ -93,5 +91,5 @@ This will then convert the image. Any attributes (E.g. class, id, data- etc) you
 	</tr>
 </table>
 
-##Roadmap
+## Roadmap
 - Ability to set options on images with a `data` attribute.
