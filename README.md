@@ -1,3 +1,5 @@
+> ⚠️ Deprecated - This plugin is no longer supported. 
+
 <img src="https://raw.githubusercontent.com/bymayo/svg-convert/master/screenshots/icon.png" width="50">
 
 # SVG Convert
